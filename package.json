@@ -1,0 +1,29 @@
+{
+  "name": "chrome-qrcode-reader",
+  "version": "1.0.0",
+  "main": "src/popup.js",
+  "repository": "https://github.com/beizhedenglong/chrome-extension-starter-kit.git",
+  "author": "Victor Wang(wang shaojie) <wang_shaojie@icloud.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "watch": "parcel watch --no-hmr ./src/popup.html -d extension/dist --no-source-maps  --public-url ./",
+    "build": "yarn clean & parcel build ./src/popup.html -d extension/dist --no-source-maps  --public-url ./",
+    "clean": "rm -rf ./extension/dist ./dist ./.cache",
+    "lint": "eslint ./src"
+  },
+  "dependencies": {
+    "@zxing/library": "^0.8.3",
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "parcel-bundler": "^1.10.3"
+  }
+}

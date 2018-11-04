@@ -1,0 +1,22 @@
+{
+  "name": "QR Code Reader",
+  "description": "A chrome extension for reading QR code from webpage.",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_popup": "dist/popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "manifest_version": 2,
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": ""
+    }
+  }
+}
