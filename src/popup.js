@@ -7,8 +7,6 @@ import isUrl from './isUrl'
 const Reader = () => {
   const [text, set] = useState('No QR code found!')
   const read = (dataUrl) => {
-    const img = new Image()
-    img.src = dataUrl
     const codeReader = new BrowserQRCodeReader()
     codeReader.decodeFromImage(undefined, dataUrl)
       .then(result => set(result.text))

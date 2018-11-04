@@ -14,5 +14,5 @@ Get it from chrome web store: [QR Code Reader](https://chrome.google.com/webstor
 
 ## Known Issues
 - Can't read multiple QR codes in one page.
-- Unable to decode some QR code
+- Unable to decode some QR code.
 
