@@ -12,7 +12,11 @@ Get it from chrome web store: [QR Code Reader](https://chrome.google.com/webstor
 - Click extension icon or use `Command/Ctrl+Shift+S` shortcut to read QR code on current tab.
 - You can customize extension shortcut On `chrome://extensions/shortcuts` page.
 
+## Contributing
+- Clone this repository
+- Run `yarn && yarn watch`
+- Open Chrome. Go to `chrome://extensions` management page, Click **Load unpacked** button, then select extension folder of this project on your disk.
+
 ## Known Issues
 - Can't read multiple QR codes in one page.
 - Unable to decode some QR code.
-
